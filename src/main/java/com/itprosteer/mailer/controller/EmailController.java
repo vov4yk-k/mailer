@@ -2,6 +2,7 @@ package com.itprosteer.mailer.controller;
 
 import com.itprosteer.mailer.model.Email;
 import com.itprosteer.mailer.repository.EmailRepository;
+import com.itprosteer.mailer.service.EmailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,6 +14,8 @@ public class EmailController {
 
     @Autowired
     private EmailRepository emailRepository;
+
+    private EmailService emailService;
 
     @GetMapping
     public List<Email> getMails(){
