@@ -10,24 +10,5 @@ public class MailerApplication {
 		SpringApplication.run(MailerApplication.class, args);
 	}
 
-	/*@Bean
-	CommandLineRunner init(final ClientRepository clientRepository, PasswordEncoder passwordEncoder) {
-
-		return new CommandLineRunner() {
-
-			@Override
-			public void run(String... arg0) throws Exception {
-
-				Client cl = new Client();
-				cl.setUsername("1eska");
-				cl.setPassword(passwordEncoder.encode("123456789"));
-
-				clientRepository.save(cl);
-
-			}
-
-		};
-
-	}*/
 }
 
