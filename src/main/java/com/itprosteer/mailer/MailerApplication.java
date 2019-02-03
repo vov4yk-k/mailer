@@ -27,7 +27,6 @@ public class MailerApplication {
 					clientRepository.save(newAdmin);
 				}
 			}
-
 		};
 
 	}
