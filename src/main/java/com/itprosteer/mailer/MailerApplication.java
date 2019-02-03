@@ -17,9 +17,7 @@ public class MailerApplication {
 
 	@Bean
 	CommandLineRunner init(final ClientRepository clientRepository, PasswordEncoder passwordEncoder) {
-
 		return new CommandLineRunner() {
-
 			@Override
 			public void run(String... arg0) throws Exception {
 				if (clientRepository.findByUsername("admin") == null){
