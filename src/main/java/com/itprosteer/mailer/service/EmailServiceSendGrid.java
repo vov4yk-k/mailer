@@ -13,6 +13,6 @@ public class EmailServiceSendGrid implements EmailService {
 
     @Override
     public void send(List<Email> emails) {
-
+        //TODO send messages througth sendgrid
     }
 }
