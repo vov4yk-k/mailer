@@ -15,6 +15,7 @@ public class EmailController {
     @Autowired
     private EmailRepository emailRepository;
 
+    @Autowired
     private EmailService emailService;
 
     @GetMapping
