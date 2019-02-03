@@ -14,11 +14,6 @@ public class EmailController {
     @Autowired
     private EmailRepository emailRepository;
 
-
-    /*public EmailController(EmailRepository emailRepository) {
-        this.emailRepository = emailRepository;
-    }*/
-
     @GetMapping
     public List<Email> getMails(){
         return emailRepository.findAll();
